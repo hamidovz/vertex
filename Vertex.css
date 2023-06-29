@@ -1,0 +1,658 @@
+body{
+    font-family: "Quicksand",Arial,sans-serif;
+    line-height: 1.8;
+}
+
+.navbarContainer{
+    position: absolute;
+    top: 4%;
+    z-index: 3;
+    color: white;
+
+
+}
+
+#title{
+    font-size: 22px;
+}
+
+.carousel .owl-carousel-1 > div{
+
+    position: relative;
+    color: white;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0962ea;
+    opacity: 0.8;
+}
+
+.slideLabel{
+    position: relative;
+    top: 30%;
+}
+.slideLabel > p{
+    font-size: 23px;
+}
+
+.slideLabel > h1{
+    font-size: 72px;
+}
+
+.carousel .owl-item{
+    height: 820px;
+}
+
+.carousel .owl-dot{
+
+    width: 18px !important;
+    height: 18px !important;
+    border: 2px solid #ffffff66  !important;
+    text-align: center !important;
+    margin: 5px;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.3s all ease;
+}
+
+.carousel .owl-dot.active{
+    border: 2px solid white !important;
+}
+
+.carousel .owl-theme .owl-dots .owl-dot span{
+    width: 6px !important;
+    height: 6px !important;
+    margin: auto !important;
+}
+
+.carousel .owl-dot span{
+    background-color: #ffffff66 !important;
+}
+
+.carousel .owl-dot.active span{
+    background-color: white !important;
+}
+
+.carousel .owl-dots{
+    margin-top: 0 !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+}
+
+#carousel-1{
+    height: 100%;
+    background-image: url("carousel-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#carousel-2{
+    height: 100%;
+    background-image: url("carousel-2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.projectCount{
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    bottom: -5%;
+    padding: 50px !important;
+}
+
+
+.countContainer{
+    font-size: 35px;
+}
+
+
+.navbarContainerFixed{
+    position: fixed;
+    background: white;
+    color: black;
+    z-index: 4;
+    /* transform: translateY(-100%); */
+    top: 0;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+
+
+
+.features{
+    margin-top: 200px;
+    color: black;
+}
+
+.features > h2 {
+    font-weight: 500;
+}
+
+
+.featureCard{
+    border: 2px dashed #dbe9fe;
+    border-left: 2px solid #dbe9fe;
+    border-bottom: 2px solid #dbe9fe;
+    text-align: center;
+}
+
+
+.featureIcon{
+    color: #0962ea;
+    font-size: 45px;
+}
+
+.featureTitle{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.projects{
+    background-color: #fafafa;
+}
+
+
+
+.imgContainerLeft > div , .imgContainerRight > div{
+    box-shadow:  0px 7px 51px -17px rgb(0 0 0 / 40%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainerLeft > div {
+    background-image: url('./assets/images/project-1.webp');
+    height: 600px;
+}
+
+.imgContainerLeft > div::after , .imgContainerRight > div::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0962ea;
+    transition: opacity 0.3s;
+    cursor:zoom-in;
+    opacity: 0;
+}
+
+.imgContainerLeft > div:hover:after{
+
+    opacity: 0.3;
+
+}    
+
+.imgContainerRight > div:hover:after{
+
+    opacity: 0.3;
+
+    
+}
+
+.imgContainerRight > div{
+    height: 280px;
+}
+
+.imgContainerRight{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.imgContainerRight > .imgTop{
+    background-image: url('./assets//images/project-2.webp');
+}
+
+.imgContainerRight > .imgBottom{
+    background-image: url('./assets//images/project-3.webp');
+}
+
+
+.magnifyIcon{
+    color:white;
+    z-index: 1;
+    opacity: 0;
+}
+
+.imgContainerLeft > div:hover .magnifyIcon{
+    opacity: 1;
+}
+
+
+.imgContainerRight > div:hover .magnifyIcon{
+    opacity: 1;
+}
+
+
+.projectCarouselContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000c9;
+    z-index: 5;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    cursor:zoom-out;
+}
+
+.projectCarouselOpen{
+    display: flex !important;
+}
+
+.quoteRequest{
+    background-image: url('./assets/images/quoteBackground.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.quoteRequest::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: #0962ea;
+    opacity: 0.5;
+}
+
+.quoteRequest > div > p{
+
+    font-size: 20px;
+}
+
+.quoteRequest > div > button{
+
+   background-color: #0962ea;
+   outline: none;
+   border: none;
+   color: white;
+   font-size: 1.25rem;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+.quoteRequest > div > button:hover{
+    background-color: #004cc1;
+}
+
+.reviews > h2{
+    font-weight: 500;
+}
+
+
+
+.owl-carousel-2  .item-2{
+    border: 2px dashed #dbe9fe;
+    border-left: 2px solid #dbe9fe;
+    border-bottom: 2px solid #dbe9fe;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+.authorName{
+    color: #0962ea;
+    font-weight: 500;
+}
+
+.authorProfession{
+    color: #d9d9d9;
+    font-size: 13px;
+}
+
+.owl-carousel-2 .owl-dot{
+    margin-top: 50px;
+}
+
+
+.owl-carousel-2 >  .owl-dots .owl-dot.active span, .owl-carousel-2 >  .owl-dots .owl-dot:hover span,
+
+.owl-carousel-3 >  .owl-dots .owl-dot.active span,  .owl-carousel-3 >  .owl-dots .owl-dot:hover span{
+    background: #0962ea !important;
+}
+
+
+.owl-carousel-2 > .owl-stage-outer{
+    padding-top: 35px !important;
+}
+.profilePhoto{
+    width:16%;
+    padding-top: 16%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    border-radius: 100%;
+
+}
+
+.profilePhoto{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profilePhoto-1 , .profilePhoto-4{
+    background-image: url('./assets/images/profile-1.webp');
+}
+
+.profilePhoto-2 , .profilePhoto-5{
+    background-image: url('./assets/images/profile-2.webp');
+}
+
+.profilePhoto-3 , .profilePhoto-6{
+    background-image: url('./assets/images/profile-3.webp');
+}
+
+
+.pricing {
+    background-color: #fafafa;
+}
+
+.pricingCard > div > .iconContainer{
+    font-size: 80px;
+    color: #609df9;
+    list-style: 1.3;
+}
+
+.pricingCard > div > .pricingTitle{
+    font-weight: 500;
+}
+
+.pricingCard > div{
+    border: 2px dashed #dbe9fe;
+    border-left: 2px solid #dbe9fe;
+    border-bottom: 2px solid #dbe9fe;
+}
+
+.pricingCard > div > .price{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    color: #b3b3b3;
+}
+
+.pricingCard > div > .price > .priceValue{
+    font-size: 30px;
+    color: black;
+}
+
+
+.pricingCard > div > button{
+    background-color: #0962ea;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.pricingCard > div > .license{
+    color: #0962ea;
+}
+
+
+
+.blogCard{
+    border: 2px dashed #dbe9fe;
+    border-left: 2px solid #dbe9fe;
+    border-bottom: 2px solid #dbe9fe;
+}
+
+.blogCard > .thumbnail{
+    cursor: pointer;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#thumbnail-1{
+    background-image: url('./assets/images/blog-1.webp');
+}
+
+#thumbnail-2{
+    background-image: url('./assets/images/blog-2.webp');
+}
+
+#thumbnail-3{
+    background-image: url('./assets/images/blog-3.webp');
+}
+
+#thumbnail-4{
+    background-image: url('./assets/images/blog-4.webp');
+}
+
+
+.blogCard > .info > .blogAuthor{
+    color: #cccccc;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.blogCard > .info > .blogTitle{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.blogCard > .info > .blogTitle:hover{
+
+    color: #0962ea;
+}
+
+.blogCard > .thumbnail:hover ~ .info > .blogTitle{
+
+    color: #0962ea;
+}
+
+
+.blogCard > .info > .blogCardBottom {
+    cursor: pointer;
+}
+
+.blogCard > .info > .blogCardBottom > .more{
+    color: #0962ea;
+}
+
+.blogCard > .info > .blogCardBottom > .comments{
+
+    color: #ccc;
+}
+
+
+.owl-carousel-3 .owl-dot{
+    margin-top: 50px;
+}
+
+.footer{
+    background-color: #0962ea;
+    color: white;
+}
+
+.footerTitle{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footerContent , .copyright{
+    color: #ffffff80;
+}
+
+.footerSocial{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 4%;
+}
+
+.footerSocial > div{
+    width: 25%;
+    padding-top: 25%;
+    border-radius: 100%;
+    background:#ffffff0d;
+    color: #ffffff80;
+    position: relative;
+    transform: color 0.3s;
+    cursor: pointer;
+}
+
+.footerSocial > div:hover{
+    color: white;
+}
+
+.socialContainer{
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+.zoom{
+    animation-duration: 1s !important;
+    animation-fill-mode:both;
+    animation-name: zoom;
+    animation-timing-function:ease !important;
+}
+
+.fadeOut{
+    animation-duration: 0.5s !important;
+    animation-fill-mode:both;
+    animation-name: fadeOut;
+    animation-timing-function:ease !important;
+}
+@keyframes zoom{
+    from {
+        opacity: 0;
+        transform:scale(0.95)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes fadeOut{
+    from {
+        opacity: 1;
+        /* transform:scale(0.95) */
+    }
+
+    to {
+        opacity: 0;
+        /* transform: scale(1); */
+    }
+}
+
+
+
+
+
+
+/*      Media Queries      */
+
+@media screen and (max-width: 991px){
+
+    .slideLabel > p{
+        font-size: 19px;
+    }
+
+    .slideLabel > h1{
+        font-size: 50px;
+    }
+
+    .carousel .owl-dots{
+        bottom: 25%;
+    }
+
+    .navbarContainer{
+        top: 0;
+        background:black;
+        color: white;
+    }
+
+
+    .mobileMenu{
+        font-size:25px;
+    }
+
+    .projectCount{
+        bottom:-22%;
+    }
+
+    .carousel{
+        margin-bottom: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px){
+    .imgContainerLeft > div{
+        height: 300px;
+    }
+
+}
+
+
+@media screen and (max-width: 443px){
+    .slideLabel > p{
+        font-size: 19px;
+    }
+
+    .slideLabel > h1{
+        font-size: 35px;
+    }
+
+    .footerSocial{
+        justify-content: flex-start;
+    }
+
+    .footerSocial > div{
+        width: 22%;
+        padding-top:22%;
+    }
+
+}
